@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Watermelon</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+        height: 100vh;
+        background-image: linear-gradient(red, white);
+      }
+      .item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 20rem;
+        width: 40rem;
+        border: 20px solid white;
+        box-shadow: 0 0 0 30px green;
+        clip-path: inset(40px -40px -40px -40px);
+        border-radius: 0 0 40rem 40rem;
+        background-color: red;
+        rotate: 10deg;
+      }
+      .item span::before,
+      .item span::after {
+        content: "";
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+        height: 15px;
+        border-radius: 40%;
+        background-color: black;
+        margin-left: 70px;
+        margin-top: 80px;
+        margin-right: 60px;
+      }
+      .item span::after {
+        margin-top: 30px;
+        margin-left: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="item">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </body>
+</html>
